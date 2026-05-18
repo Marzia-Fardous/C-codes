@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int arr[100],num,sum=0,avg;
+    printf("Enter size of the array: ");
+    scanf("%d",&num);
+    for(int i=0;i<num;i++)
+    {
+        printf("Enter %d number: ",i+1);
+        scanf("%d",&arr[i]);
+        sum=sum+arr[i];
+    }
+    avg=sum/num;
+    printf("Average: %d",avg);
+    return 0;
+}
